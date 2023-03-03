@@ -1,0 +1,371 @@
+<header class="bg-dark py-5" style="padding-top: 10px">
+  <div class="container">
+    <div class="row gx-5 align-items-center justify-content-center">
+      <div class="col-lg-12 col-xl-7 col-xxl-6">
+        <div class="my-5 text-center text-xl-start">
+          <h1 class="display-5 fw-bolder text-white mb-2" style="color: orange">
+            Introduction to Operating System
+          </h1>
+          <br />
+          <div>
+            <a class="btn btn-info" (click)="onNotes()">Notes</a> |
+            <a class="btn btn-info" (click)="onPyq()">PYQ</a>
+          </div>
+          <div
+            class="row"
+            style="padding-top: 20px; padding-left: 20px"
+            *ngIf="notes"
+          >
+            <h3 style="text-align: left; color: #e534eb">
+              Operating System Overview
+            </h3>
+            <div style="text-align: left; padding-left: 20px">
+              <p>
+                An Operating System (OS) is an
+                <span style="color: rgb(238, 8, 8)">
+                  interface between a user and computer hardware
+                </span>
+              </p>
+            </div>
+            <hr />
+            <h3 style="text-align: left; color: #e534eb">
+              Functions of Operating System
+            </h3>
+            <div style="text-align: left; padding-right: 20px">
+              <p>
+                <span style="color: rgb(8, 73, 238)"> 1) User Interface =</span>
+                <li>
+                  User interface is a paltform for users and other applications
+                  running on the Operating system to communicate with each other
+                </li>
+              </p>
+              <p>
+                <span style="color: rgb(8, 73, 238)">
+                  2) Resource Management =</span
+                >
+                <li>
+                  Devices connected to a computer system , such as memory,
+                  storage, I/O devices etc. re called as resources of the
+                  computer
+                </li>
+                <li>
+                  Operating System controls these resources and enable efficient
+                  use of available resources
+                </li>
+              </p>
+              <p>
+                <span style="color: rgb(8, 73, 238)">
+                  3) Task Management =</span
+                >
+                <li>
+                  Task Management is the part of opearting system that control
+                  the running of one or more programs (tasks) whithin the
+                  computer at the same time
+                </li>
+              </p>
+              <p>
+                <span style="color: rgb(8, 73, 238)">
+                  4) File Management =</span
+                >
+                <li>
+                  File management refers to the process of organizing , storing
+                  and manipulating files on a computer system.
+                </li>
+              </p>
+              <p>
+                <span style="color: rgb(8, 73, 238)"> 5) Utilities =</span>
+                <li>
+                  A utility is a small program that provides an addition to the
+                  capabilities provided by operating system.
+                </li>
+              </p>
+            </div>
+            <hr />
+
+            <!--  -->
+            <h3 style="text-align: left; color: #e534eb">
+              Operating System Operations
+            </h3>
+            <div style="text-align: left; padding-right: 20px">
+              <p>
+                <span style="color: rgb(8, 73, 238)"
+                  >1) Dual mode operation
+                </span>
+                <li>User Mode</li>
+                <li>
+                  Kernel Mode : (Also called as supervisor, system or privileged
+                  mode)
+                </li>
+              </p>
+              <p><span style="color: rgb(8, 73, 238)">2) Timer </span></p>
+              <li>
+                We can use the timer to prevent a user program from running too
+                long
+              </li>
+            </div>
+            <hr />
+
+            <!--  -->
+
+            <h3 style="text-align: left; color: #e534eb">
+              Operating System
+              <span style="background-color: yellow"> Structure </span>
+            </h3>
+            <br />
+            <div style="text-align: left; padding-right: 10px">
+              <h4>
+                <span style="color: rgb(8, 73, 238)">1) Simple Structure </span>
+              </h4>
+              <p>MS-DOS Structure</p>
+              <img
+                src="https://computerhindinotes.com/wp-content/uploads/2019/03/MS-DOS-Layer-structure.jpg"
+                class="img-thumbnail"
+                style="height: 50vh; text-align: center"
+              />
+              <br />
+              <br />
+              <h4 style="font-weight: bold">Advantages =></h4>
+              <li>
+                MS-DOS return to provide the most functionality in the list
+                space
+              </li>
+              <br />
+              <h4 style="font-weight: bold">Disadvantages =></h4>
+              <li>Not Divided into Module</li>
+              <li>
+                Even if MS-DOS has some structure , it's interfaces and levels
+                of functionality are not well separated
+              </li>
+            </div>
+            <hr />
+            <div style="text-align: left; padding-right: 10px">
+              <h4>
+                <span style="color: rgb(8, 73, 238)">2) Layered Approach </span>
+              </h4>
+              <br />
+              <img
+                style="width: 60%; height: 60%"
+                src="https://miro.medium.com/max/1040/1*dGC4LbUB7I00LHgpYlyhVA.png"
+                class="img-thumbnail"
+                style="height: 50vh; text-align: center"
+              />
+              <br />
+              <br />
+              <h4 style="font-weight: bold">Advantages =></h4>
+              <li>Simple to design and implement</li>
+              <li>Easy to modify and anhance</li>
+              <li>Easy to debug</li>
+              <li>Data and operations of layer is hidden from other layers</li>
+              <br />
+              <h4 style="font-weight: bold">Disadvantages =></h4>
+              <li>It needs careful definition of layer interface</li>
+              <li>Number of layers must be moderate</li>
+              <li>
+                As higher-level layer call lower layer, Unnecessary data needs
+                to pass through various layer . Each layer adds overhead to the
+                system call
+              </li>
+            </div>
+            <hr />
+            <!--  -->
+            <div style="text-align: left; padding-right: 10px">
+              <h4>
+                <span style="color: rgb(8, 73, 238)">3) Micro-Kernels </span>
+              </h4>
+              <li>
+                In this OS structured by removing all nonessential components
+                from kernel and implemented as system and user level programs
+              </li>
+              <br />
+              <h4 style="font-weight: bold">Advantages =></h4>
+              <li>Easy to extend</li>
+              <li>It is portable</li>
+              <li>More secure and reliable</li>
+              <li>
+                All new services can be added to user space without modifying
+                the kernel
+              </li>
+              <br />
+              <h4 style="font-weight: bold">Disadvantages =></h4>
+              <li>
+                The performance of microkernel decreases due to increased
+                function overhead
+              </li>
+            </div>
+            <hr />
+            <div style="text-align: left; padding-right: 10px">
+              <h4>
+                <span style="color: rgb(8, 73, 238)">4) Modules </span>
+              </h4>
+              <li>
+                Modules are similar to layers in that each subsystem has clearly
+                defined tasks and interfaces, but any module is free to contact
+                any other module, eliminating the problems of going through
+                multiple intermediary layers (Like layered Approach).
+              </li>
+              <li>
+                The kernel is relatively small in this architecture, similar to
+                microkernels, but the kernel does not have to implement message
+                passing since modules are free to contact each other directly.
+                Eg: Solaris, Linux and MacOSX
+              </li>
+              <br />
+              <img
+                src="https://www.researchgate.net/profile/Eduardo-Fernandez-40/publication/268397726/figure/fig3/AS:669563205201931@1536647716657/The-modular-design-of-the-Solaris-10-Operating-System-Sil03.png"
+                class="img-thumbnail"
+                style="height: 50vh; text-align: center"
+              />
+              <br />
+              <br />
+            </div>
+            <br />
+            <hr />
+
+            <!--  -->
+            <h3 style="text-align: left; color: #e534eb">
+              Open Source Operating System
+            </h3>
+            <div style="text-align: left; padding-right: 20px">
+              <p>
+                <li>
+                  An open-source operating system is the operating system in
+                  which source code is visible publicly and editable
+                </li>
+                <li>
+                  Linux is open source opearting system which is widely used and
+                  very popular
+                </li>
+                <li>
+                  Open source opearting system work same as closed ones , the
+                  only difference is that the source code or whole application
+                  is modifiable by user
+                </li>
+              </p>
+              <h4 style="font-weight: bold">Advantages =></h4>
+              <li>Cost-Effective</li>
+              <li>Reliable and efficient</li>
+              <li>Flexibility</li>
+              <br />
+              <h4 style="font-weight: bold">Disadvantages =></h4>
+              <li>Security Risk</li>
+              <li>Complicated = It is not user friendly</li>
+              <li>No support</li>
+            </div>
+            <hr />
+            <h3 style="text-align: left; color: #e534eb">Booting</h3>
+            <div style="text-align: left">
+              <li>
+                The procedure of
+                <span style="color: rgb(238, 8, 8)">
+                  starting a computer by loading the kernel
+                </span>
+                is known as booting the system
+              </li>
+              <li>
+                To make operating system available , it should make availbale by
+                hardware . For this purpose , hardware should know where the
+                kernel is or how to load kernel (OS).
+              </li>
+              <li>
+                Small program known as
+                <b style="color: rgb(255, 107, 107)">bootstrap program</b>
+                or <b>bootstrap loader</b> loctes the kernel , loads it into
+                main memory and start execution
+              </li>
+            </div>
+            <hr />
+            <h3 style="text-align: left; color: #e534eb">
+              Operating System Services
+            </h3>
+            <div style="text-align: left">
+              <li>User Interface</li>
+              <li>Program execution</li>
+              <li>I/O operations</li>
+              <li>File-system manipulation</li>
+              <li>Communication</li>
+              <li>Error Detection</li>
+              <li>Resource allocations</li>
+              <li>Accounting</li>
+              <li>Protection and security</li>
+            </div>
+            <hr />
+            <h3 style="text-align: left; color: #e534eb">System Calls</h3>
+            <div style="text-align: left">
+              <li>
+                A system call is a way for programs to interact with the
+                operating system
+              </li>
+              <li>There are 5 different categories of system calls</li>
+              <ol>
+                <li>Process Control</li>
+                <li>File Management</li>
+                <li>Device Management</li>
+                <li>Information maintenance</li>
+                <li>Communication</li>
+              </ol>
+              <br />
+              <p>
+                <strong>1] Process Control</strong>
+              </p>
+              <ul>
+                <li>
+                  These system calls deal with processes such as process creation, process termination etc
+                </li>
+                <li>
+                  getpid() , getppid() , fork() etc.
+                </li>
+              </ul>
+              <br />
+              <p>
+                <strong>2] File related system calls</strong>
+              </p>
+              <ul>
+                <li>
+                  These system calls are responsible for file manipulation such
+                  as creating a file, reading a file, writing into a file etc.
+                </li>
+              </ul>
+              <br>
+              <p>
+                <strong>3] Device Management</strong>
+              </p>
+              <ul>
+                <li>
+                  These system calls are responsible for device manipulation such as reading from device , writing into device , accesing I/O devices etc.
+                </li>
+              </ul>
+              <br>
+              <p>
+                <strong>4] Information maintenance</strong>
+              </p>
+              <ul>
+                <li>
+                  These system calls handle information and its transfer between the operating system and the user program.
+                </li>
+                <li>settimer(), sleep(), etc.</li>
+              </ul>
+              <br>
+              <p>
+                <strong>5] Communication</strong>
+              </p>
+              <ul>
+                <li>
+                  These system calls are useful for interprocess communication. They also deal with creating and deleting a communication connection.
+                </li>
+                <li>pipe(), mmap(), etc.</li>
+              </ul>
+            </div>
+            <hr />
+          </div>
+        </div>
+        <div class="container" *ngIf="pyq">
+          <div class="row" style="padding-top: 20px">
+            <h3 style="text-align: left; color: #e534eb">
+              Previous Year Quetions
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

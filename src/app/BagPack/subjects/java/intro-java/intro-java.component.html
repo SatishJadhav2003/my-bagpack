@@ -1,0 +1,195 @@
+<header class="bg-dark py-5" style="padding-top: 10px">
+  <div class="container">
+    <div class="row gx-5 align-items-center justify-content-center">
+      <div class="col-lg-12 col-xl-7 col-xxl-6">
+        <div class="my-5 text-center text-xl-start">
+          <h1 class="display-5 fw-bolder text-white mb-2" style="color: orange">
+            An Introduction to Java
+          </h1>
+          <br />
+          <div>
+            <a class="btn btn-info" (click)="onNotes()">Notes</a> |
+            <a class="btn btn-info" (click)="onPyq()" >PYQ</a>
+          </div>
+          <div
+            class="row"
+            style="padding-top: 20px; padding-left: 10px; padding-right: 5px"*ngIf="notes"
+          >
+            <h3 style="text-align: left; color: #e534eb">Introduction :-</h3>
+            <div style="text-align: left; padding-left: 10px">
+              <p>
+                <li>
+                  Java is a popular programming language, created in
+                  <span style="color: rgb(238, 8, 8)"> 1995. </span>
+                </li>
+                <li>
+                  It is used for:-Mobile applications (specially Android apps),
+                  Desktop applications Web applications, Web servers and
+                  application servers, Games, Database connection, And much,
+                  much more!
+                </li>
+              </p>
+            </div>
+            <hr />
+            <h3 style="text-align: left; color: #e534eb">
+              Object Oriented Programming
+            </h3>
+            <div style="text-align: left; padding-left: 5px">
+              <h4 style="color: orange">Advantages / Features :-</h4>
+              <li>Focus on data rather than functions</li>
+              <li>Follow bottom-up approach</li>
+              <li>Program divided into objects</li>
+              <li>Objects can communicate through functions</li>
+              <li>Any data and function in object can easily added</li>
+              <li>Objects can be reusable</li>
+              <li>Data is kept hidden from external objects</li>
+            </div>
+            <br />
+            <div style="text-align: left; padding-left: 5px">
+              <h4 style="color: orange">Application areas of OOP :-</h4>
+              <li>User interface design</li>
+              <li>Real time System</li>
+              <li>Simulation and Modeling</li>
+              <li>Object Oriented Databases</li>
+              <li>Artificial Intelligence</li>
+              <li>Games, Entertainment and Multi-media Software</li>
+            </div>
+            <hr />
+            <h3 style="text-align: left; color: #e534eb">
+              <span style="background-color: yellow">
+                Concepts / Terminologies in OOPs :-
+              </span>
+            </h3>
+            <div style="text-align: left; padding-left: 5px">
+              <h4 style="color: orange">1] Class</h4>
+              <p>
+                <li>
+                  A class is user define data type , Which consist of data and
+                  methods of an object
+                </li>
+                <li>It is also called as blueprint of an object</li>
+                <li>
+                  A class is a group of objects which have common properties.
+                </li>
+              </p>
+              <br />
+              <h4 style="color: orange">2] Object</h4>
+              <p>
+                <li>Object is a instance (result) of a class</li>
+              </p>
+              <br />
+              <img
+                src="https://miro.medium.com/max/1400/1*CM0Jy_kA06FwPx0O432RxA.png"
+                class="img-thumbnail" style="height: 50vh;  text-align: center;"
+              />
+              <br />
+              <br />
+              <img
+                src="https://pediaa.com/wp-content/uploads/2019/05/Difference-Between-Class-and-Object-Comparison-Summary.jpg"
+                class="img-thumbnail" style="height: 50vh;  text-align: center;"
+              />
+              <br />
+              <br />
+              <h4 style="color: orange">3] Data Abstraction</h4>
+              <p>
+                <li>
+                  Data abstraction is a process of hiding certain details and
+                  showing only essential information to the user
+                </li>
+              </p>
+              <img
+                src="https://www.sitesbay.com/java/images/real-life-example-of-abstraction.png "
+                class="img-thumbnail" style="height: 50vh;  text-align: center;"
+              />
+              <br />
+              <h4 style="color: orange">4] Data Encapsulation</h4>
+              <p>
+                <li>
+                  Data Encapsulation is the process by which data and the
+                  objects (code that acts upon them ) or methods are integrated
+                  as a single unit
+                </li>
+              </p>
+              <img
+                src="https://miro.medium.com/max/559/1*CLBzWEo22SXvh-0dT3eV_w.png "
+                class="img-thumbnail" style="height: 50vh;  text-align: center;"
+              />
+              <br />
+              <h4 style="color: orange">5] Inheritance</h4>
+              <p>
+                <li>
+                  Inheritance is a mechanism where in a new class is derived
+                  from an existing class
+                </li>
+              </p>
+              <img
+                src="https://miro.medium.com/max/695/1*oBhF0WErwQ3EuXaU3-dTTw.png"
+                class="img-thumbnail" style="height: 50vh;  text-align: center;"
+              />
+              <br />
+              <h4 style="color: orange">6] Polymorphism</h4>
+              <p>
+                <li>
+                  Polymorphism is a concept by which we can perform single
+                  action in different way
+                </li>
+                <li>In below img Sound() fuction is used in different ways</li>
+              </p>
+              <img
+                src="https://i0.wp.com/tutorial.eyehunts.com//wp-content/uploads/2018/12/Java-polymorphism-example-and-diagram-animal-1024x757.png?resize=1024%2C757&ssl=1"
+                class="img-thumbnail" style="height: 50vh;  text-align: center;"
+              />
+              <br />
+              <h4 style="color: orange">7] Message-Passing</h4>
+              <p>
+                <li>
+                  Objects are communicate with one another by sending and
+                  receiving information to each other
+                </li>
+              </p>
+              <img
+                src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/06/Message-Passing.jpg"
+                class="img-thumbnail" style="height: 50vh;  text-align: center;"
+              />
+            </div>
+
+          <hr />
+          <h3 style="text-align: left; color: #e534eb">
+            Difference Between procedure-oriented programming and OOP
+          </h3>
+          <div style="text-align: left; padding-left: 5px">
+            <br />
+            <img
+              src="https://2.bp.blogspot.com/--KbevdsaxRY/Wq-6WPzANLI/AAAAAAAAA6w/hCJlFTqEER8n90i-soCJ1xI15nlvVpxnACLcBGAs/s1600/m.PNG"
+              class="img-thumbnail" style="height: 50vh;  text-align: center;"
+            />
+          </div>
+          <hr />
+          <h3 style="text-align: left; color: #e534eb">Features of JAVA</h3>
+          <div style="text-align: left; padding-left: 5px">
+            <p>
+              <li>Simple</li>
+              <li>Object - Oriented</li>
+              <li>Platform independent</li>
+              <li>Compiled as well as interpreted</li>
+              <li>Distributed</li>
+              <li>Dynamic</li>
+              <li>Robust</li>
+              <li>Secure</li>
+              <li>Portable</li>
+            </p>
+          </div>
+          <hr>
+        </div>
+        </div>
+        <div class="container" *ngIf="pyq">
+          <div class="row" style="padding-top: 20px">
+            <h3 style="text-align: left; color: #e534eb">
+              Previous Year Quetions
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

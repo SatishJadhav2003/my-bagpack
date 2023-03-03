@@ -1,0 +1,71 @@
+<header class="bg-dark py-5" style="padding-top: 10px">
+  <div class="container">
+    <div class="row gx-5 align-items-center justify-content-center">
+      <div class="col-lg-12 col-xl-7 col-xxl-6">
+        <div class="my-5 text-center text-xl-start">
+          <h1 class="display-5 fw-bolder text-white mb-2" style="color: orange">
+            Finite Automata
+          </h1>
+          <br />
+          <div>
+            <a class="btn btn-info" (click)="onNotes()" >Notes</a> |
+            <a class="btn btn-info" (click)="onPyq()">PYQ</a>
+          </div>
+          <div class="row" style="padding-top: 20px; padding-left: 20px" *ngIf="notes" >
+            <h3 style="text-align: left; color: #e534eb">Finite Automata</h3>
+            <div
+              style="text-align: left; padding-left: 10px; padding-right: 20px"
+            >
+              <p>
+                <li>
+                  Finite Automata is mathematical model of the system with
+                  descrite input and outputs.
+                </li>
+                <li>
+                  The system always in one of the internal configuration of the
+                  system called
+                  <span style="color: rgb(238, 8, 8);font-weight:bold;"> State </span>
+                </li>
+                <li>Finite Automata has initial, final and internal states</li>
+                <li>System move from one state to other state depending on the input symbol called as<span style="color: rgb(238, 8, 8); font-weight:bold;"> Transition </span> </li>
+              </p>
+              <br>
+              <p style="font-weight:bold;" >
+                M = ( Q , Σ , 𝛿 , q<sub>o</sub> , F )
+              </p>
+              <p>Q = set of states</p>
+              <p>Σ = set of input symbols</p>
+              <p>𝛿 = Transition Function</p>
+              <p>q<sub>o</sub> = Initial state</p>
+              <p>F = Set of final state</p>
+              <br>
+              <br>
+              <p>The machin graphically represented in diagram it has 3 parts </p>
+              <h4>
+                <span style="color: rgb(8, 73, 238)">1) Input Tape :- </span>
+              </h4>
+              <li>It is divided into identical square each square hold single character</li>
+              <h4>
+                <span style="color: rgb(8, 73, 238)">2) Read head/ Input head :- </span>
+              </h4>
+              <li>It is positions the next character to be read</li>
+              <li>It moves from left to right</li>
+              <h4>
+                <span style="color: rgb(8, 73, 238)">3) Finite Control :- </span>
+              </h4>
+              <li>It's in state q reads symbol a position by the read head and other in state p it's called transition</li>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="container" *ngIf="pyq">
+          <div class="row" style="padding-top: 20px">
+            <h3 style="text-align: left; color: #e534eb">
+              Previous Year Quetions
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

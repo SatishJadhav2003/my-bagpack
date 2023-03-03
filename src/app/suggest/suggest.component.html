@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm" >
+        <div id="user-data" ngModelGroup="userData" #userData="ngModelGroup" >
+          <div class="form-group">
+            <label for="name" >Name</label>
+            <input type="text" name="name" class="form-control" required ngModel  #name="ngModel" >
+            <span class="help-block" *ngIf="!name.valid && name.touched" >Name is Required</span>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="form-control" required ngModel email #email="ngModel" name="email" >
+            <span class="help-block" *ngIf="!email.valid && email.touched" >Please enter valid email</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="suggetion">Suggetion</label>
+          <textarea type="text"  class="form-control" required ngModel  #suggetion="ngModel" name="suggetion" rows="4"  ></textarea>
+          <span class="help-block" *ngIf="!suggetion.valid && suggetion.touched" >This field is required</span>
+        </div>
+            <button class="btn btn-info"[disabled]="!f.valid" type="submit" (click)="onSend(f)" >Submit</button> |
+            <button class="btn btn-danger" type="button" routerLink="../"  >Cancel</button>
+            <span class="help-block" style="text-align: center; font-weight:bold; color:green;"  *ngIf="formSubmited" >Thanks for your Suggetion  </span>
+      </form>
+
+    </div>
+  </div>
+</div>

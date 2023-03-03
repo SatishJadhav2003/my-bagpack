@@ -1,0 +1,251 @@
+<header class="bg-dark py-5" style="padding-top: 10px">
+  <div class="container px-5">
+    <div class="row gx-5 align-items-center justify-content-center">
+      <div class="col-lg-12 col-xl-7 col-xxl-6">
+        <div class="my-5 text-center text-xl-start">
+          <h1 class="display-5 fw-bolder text-white mb-2" style="color: orange">
+            Introduction to Data Science
+          </h1>
+          <br />
+          <div>
+            <a class="btn btn-info" (click)="onNotes()">Notes</a> |
+            <a class="btn btn-info" (click)="onPyq()">PYQ</a>
+          </div>
+          <div class="container" *ngIf="notes">
+            <div class="row" style="padding-top: 20px">
+              <h3 style="text-align: left; color: #e534eb">
+                Intro to Data Science :-
+              </h3>
+              <div style="text-align: left">
+                <p>
+                  <li>
+                    Data science is an
+                    <mark style="background-color: yellow"
+                      >interdisciplinary field
+                    </mark>
+                    that uses scientific methods, processes, algorithms and
+                    systems to extract or extrapolate knowledge and insights
+                    from noisy, structured and unstructured data,[1][2] and
+                    apply knowledge from data across a broad range of
+                    application domains
+                  </li>
+                </p>
+                <br />
+                <!-- <p>=> Data Science is the study of data. It is about extracting, analyzing, visualizing, managing and storing data to create insights. These insights help the companies to make powerful data-driven decisions. Data Science requires the usage of both unstructured and structured data. </p> -->
+                <br />
+                <p><li>Data Science and Associated Fields</li></p>
+                <img
+                  src="https://miro.medium.com/max/365/0*POjH5vv_7t8s8loG"
+                  class="img-thumbnail" style="height: 50vh;  text-align: center;"
+                />
+                <hr />
+                <br />
+                <p><li>Process of Data Science</li></p>
+                <img
+                  src="https://www.researchgate.net/profile/Jose-Labeaga/publication/315442481/figure/fig1/AS:618484211937296@1524469535870/The-Data-Science-Process-41.png"
+                  class="img-thumbnail" style="height: 50vh;  text-align: center;"
+                />
+                <hr />
+                <h3 style="text-align: left; color: #e534eb">
+                  Advantages of Data Science :-
+                </h3>
+                <li>
+                  It helps to extract meaningfull information from raw data
+                </li>
+                <li>
+                  It is widely used in health-care, banking, consultancy
+                  services, and e-commerce industries. Data Science is a very
+                  versatile field
+                </li>
+                <li>It improve a quality of data</li>
+                <li>It improves a quality of services and Products</li>
+                <hr />
+                <h3 style="text-align: left; color: #e534eb">
+                  Disadvantages of Data Science :-
+                </h3>
+                <li>Problem of Data Privacy</li>
+                <li>Large Amount of Domain Knowledge Required</li>
+                <li>
+                  The tools used for data science are more expensive to use to
+                  obtain information
+                </li>
+                <li>Difficult to selection of Tools</li>
+              </div>
+              <hr />
+              <h3 style="text-align: left; color: #e534eb">
+                <span style="background-color: yellow"
+                  >The 3 V's of Data Science :-</span
+                >
+              </h3>
+              <div style="text-align: left">
+                <li>
+                  The 3 V's of data science are :
+                  <mark>1) Volume, 2) Velocity, 3) Variety </mark>
+                </li>
+                <li>Volume => size and scope of data</li>
+                <li>Velocity => A speed at which data is accumulated</li>
+                <li>Variety => Different type of data</li>
+                <br />
+                <img
+                  src="https://coforge.com/salesforce/wp-content/uploads/2020/10/The-3Vs-of-big-data.png"
+                  class="img-thumbnail" style="height: 50vh;  text-align: center;"
+                />
+                <hr />
+              </div>
+              <h3 style="text-align: left; color: #e534eb">
+                Application Data Science :-
+              </h3>
+              <div style="text-align: left">
+                <li>Internet Search</li>
+                <li>Recommendation System</li>
+                <li>Gamming world</li>
+                <li>Online price comparison</li>
+                <li>Fraud and Risk Detection</li>
+                <li>Healthcare</li>
+                <hr />
+              </div>
+              <h3 style="text-align: left; color: #e534eb">
+                <span style="background-color: yellow"
+                  >Data Science Life Cycle :-</span
+                >
+              </h3>
+              <div style="text-align: left">
+                <br />
+                <img
+                  src="assets/images/ds_ch1_data_lifecycle.png"
+                  class="img-thumbnail" style="height: 50vh;  text-align: center;"
+                />
+                <p>1) Goal setting</p>
+                <p>2) Data Understanding</p>
+                <p>3) Data Prepration</p>
+                <p>4) Exploratory data Analysis</p>
+                <p>5) Data Modeling</p>
+                <p>6) Data Evaluation</p>
+                <p>7) Data Deplyoment</p>
+                <hr />
+              </div>
+              <h3 style="text-align: left; color: #e534eb">
+                <span style="background-color: yellow"
+                  >Data Scientist ToolBox :-</span
+                >
+              </h3>
+              <div style="text-align: left">
+                <br />
+                <p>1) Python Programming</p>
+                <p>2) R Programming</p>
+                <p>3) SAS ( Stastical Analysis System )</p>
+                <p>4) Tobleave Public - Visualize</p>
+                <p>5) Microsoft Excel</p>
+                <p>6) Rapid Miner - Capacity to provide suitable environment</p>
+                <p>7) Apache Spark - Hadoop , map Reduce, high speed</p>
+                <p>
+                  8) Knime - data report, Mining, Analysis, Deal with large
+                  volume of data
+                </p>
+                <p>
+                  9) Apache Flink - Quickly carry out realtime data analysis
+                </p>
+                <hr />
+              </div>
+              <h3 style="text-align: left; color: #e534eb">
+                <span style="background-color: yellow">Type of Data :-</span>
+              </h3>
+              <div style="text-align: left">
+                <br />
+                <h4>1] Structured</h4>
+                <h4>2] Unstructured</h4>
+                <h4>3] Semi Structured</h4>
+                <br />
+                <img
+                  src="assets/images/structured&unstructured.png"
+                  class="img-thumbnail" style="height: 50vh;  text-align: center;"
+                />
+                <hr />
+                <h3 style="text-align: left; color: #e534eb">
+                  Problem Faced in Unstructured Data :-
+                </h3>
+                <div style="text-align: left; padding: right 10px">
+                  <li>Data keeps expanding</li>
+                  <li>Time and Energy consuming</li>
+                  <li>Not all data is high quality</li>
+                  <li>Data can't be analysed with conventional system</li>
+                  <hr />
+                </div>
+                <h3 style="text-align: left; color: #e534eb">
+                  Data sources :-
+                </h3>
+                <div style="text-align: left; padding: right 10px">
+                  <h4>
+                    <span style="color: rgb(8, 73, 238)"
+                      >1) Open data sources
+                    </span>
+                  </h4>
+                  <li>
+                    Open data is that some data should be freely available in a
+                    public domain that can be used by anyone as they wish,
+                    without any restrictions
+                  </li>
+                  <h4>
+                    <span style="color: rgb(8, 73, 238)"
+                      >2) Social media data
+                    </span>
+                  </h4>
+                  <li>
+                    Social media data provides commonly available information on
+                    social media channels published by social media users.
+                  </li>
+                  <li>
+                    We can get social media data from different social media
+                    data API (Application programming interface)
+                  </li>
+                  <h4>
+                    <span style="color: rgb(8, 73, 238)"
+                      >3) Multi-Modal data
+                    </span>
+                  </h4>
+                  <li>
+                    Multimodal data refers to data that spans different types
+                    and contexts (e.g., imaging, text, or genetics)
+                  </li>
+                  <h4>
+                    <span style="color: rgb(8, 73, 238)"
+                      >3) Standard Datasets
+                    </span>
+                  </h4>
+                  <li>A datasets or data set is simply a collection of data</li>
+                  <li>Most common format for datasets is a CSV format</li>
+                  <hr />
+                </div>
+              </div>
+              <h3 style="text-align: left; color: #e534eb">Data Formats :-</h3>
+              <div style="text-align: left;">
+                <ol type="1" >
+                  <li>Integers</li>
+                  <li>Floats</li>
+                  <li>Text Data</li>
+                  <li>Dense Numerical Array</li>
+                  <li>Compressed</li>
+                  <li>CSV files</li>
+                  <li>HTML files</li>
+                  <li>JSON files</li>
+                  <li>XML files</li>
+                  <li>Tar files</li>
+                  <li>Zip files</li>
+                  <li>Image files</li>
+                </ol>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="container" *ngIf="pyq">
+          <div class="row" style="padding-top: 20px">
+            <h3 style="text-align: left; color: #e534eb">
+              Previous Year Quetions
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
